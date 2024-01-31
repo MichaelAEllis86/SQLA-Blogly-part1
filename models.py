@@ -32,8 +32,8 @@ class User(db.Model):
                         unique=False,
                         default='https://i.imgur.com/SHxfpjI.jpg'
                         )
-#problem exists with image_url model will not accept strings longer than 50, creates a pyscopig error
-#problem exits with default image, for one it doens't work because of imgur in a img tag, also the default is not filling when the form is left blank
+#problem exists with image_url model will not accept strings longer than 50, creates a pyscopig error -------->Fixed!
+#problem exits with default image, for one it doens't work because of imgur in a img tag, also the default is not filling when the form is left blank ----->Need to fix!
 
     
     

@@ -38,7 +38,7 @@ def handle_new_user_form():
     db.session.add(new_user)
     db.session.commit()
     flash("new user created!!")
-    flash(f"your new user is {new_user.first_name}{new_user.last_name} with a user id of {new_user.id}")
+    flash(f"your new user is {new_user.first_name}{new_user.last_name} with a user id of {new_user.id}", "success")
     return redirect("/users")
 
 @app.route("/users/<user_id>")
